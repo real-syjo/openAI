@@ -18,6 +18,7 @@ public class AppConfig {
     @Bean
     public ChatClient chatClient(ChatClient.Builder chatClientBuilder){
                                                     //system Massage(LLM역할부여)
-        return chatClientBuilder.defaultSystem(resource).build();
+       // return chatClientBuilder.defaultSystem(resource).build();
+        return chatClientBuilder.build();
     }
 }
